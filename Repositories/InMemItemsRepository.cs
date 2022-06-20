@@ -38,5 +38,10 @@ namespace Catalog.Repositories
             // return item;
             // return items.Where(item => item.Id == id).SingleOrDefault(); // Finds: return item, Not FindL Returns No.
         }
+
+        public void CreateItem(Item item)
+        {
+            items.Add(item);
+        }
     }
 }
