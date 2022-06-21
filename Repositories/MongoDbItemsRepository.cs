@@ -4,18 +4,20 @@ using System;
 using System.Collections.Generic;
 using Catalog.Controllers;
 using Catalog.Entities;
+using MongoDB.Bson;
 using MongoDB.Driver;
 
 namespace Catalog.Repositories
 {
-    public class MongoDbItemsRepositoy : IItemsRepository
+    public class MongoDbItemsRepository : IItemsRepository
     {
-        private readonly IMongoCollection<Item> itemsCollection;
-
         private const string databaseName = "catalogd";
 
         private const string collectionName = "items";
-        public MongoDbItemsRepositoy(IMongoClient mongoClient)
+
+        private readonly IMongoCollection<Item> itemsCollection;
+
+        public MongoDbItemsRepository(IMongoClient mongoClient)
         {
             IMongoDatabase database = mongoClient.GetDatabase(databaseName);
             itemsCollection = database.GetCollection<Item>(collectionName);
@@ -35,12 +37,14 @@ namespace Catalog.Repositories
 
         public Item GetItem(Guid id)
         {
+            
             throw new NotImplementedException();
+        
         }
 
         public IEnumerable<Item> GetItems()
         {
-            throw new NotImplementedException();
+            return itemsCollection.Find(new BsonDocument()).ToList();
         }
 
         public void UpdateItem(Item item)
