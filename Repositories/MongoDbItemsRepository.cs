@@ -4,6 +4,7 @@ using System;
 using System.Collections.Generic;
 using Catalog.Controllers;
 using Catalog.Entities;
+using Microsoft.VisualBasic;
 using MongoDB.Bson;
 using MongoDB.Driver;
 
@@ -16,6 +17,8 @@ namespace Catalog.Repositories
         private const string collectionName = "items";
 
         private readonly IMongoCollection<Item> itemsCollection;
+
+        private readonly FilterDefinitionBuilder<Item> filterBuilder = Builders<Item>.Filter;
 
         public MongoDbItemsRepository(IMongoClient mongoClient)
         {
@@ -37,8 +40,8 @@ namespace Catalog.Repositories
 
         public Item GetItem(Guid id)
         {
-            
-            throw new NotImplementedException();
+            var filter = filterBuilder.Eq(item => item.Id, id);
+            return itemsCollection.Find(filter).SingleOrDefault();
         
         }
 
