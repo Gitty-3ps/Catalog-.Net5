@@ -25,7 +25,10 @@ using Catalog.Api.Repositories;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using Moq;
+using FluentAssertions;
 using Xunit;
+using System.Buffers;
+
 namespace Catalog.UnitTests
 {
 
@@ -51,8 +54,8 @@ namespace Catalog.UnitTests
             var result = await controller.GetItemAsync(Guid.NewGuid());
 
             // Assert   
-            //  result.Result.Should().BeOfType<NotFoundResult>();
-            Assert.IsType<NotFoundResult>(result.Result);
+             result.Result.Should().BeOfType<NotFoundResult>();
+            // Assert.IsType<NotFoundResult>(result.Result);
         }
 
            [Fact]
@@ -71,15 +74,38 @@ namespace Catalog.UnitTests
         var result = await controller.GetItemAsync(Guid.NewGuid());
 
         // Assert
-        //    result.Value.Should().BeEquivalentTo(
-        //     expectedItem,
-        //     options => options.ComparingByMembers<Item>());
+           result.Value.Should().BeEquivalentTo(
+            expectedItem,
+            options => options.ComparingByMembers<Item>());
 
-        Assert.IsType<ItemDto>(result.Value);
-        var dto = (result as ActionResult<ItemDto>).Value;
-        Assert.Equal(expectedItem.Id, dto.Id);
-        Assert.Equal(expectedItem.Name, dto.Name);
+        // Assert.IsType<ItemDto>(result.Value);
+        // var dto = (result as ActionResult<ItemDto>).Value;
+        // Assert.Equal(expectedItem.Id, dto.Id);
+        // Assert.Equal(expectedItem.Name, dto.Name);
        
+        }
+
+        [Fact]
+        public async Task GetItemAsync_WithExistingItem_ReturnsAllItems()
+        {
+            // Arrange
+            var expectedItems = new[]{CreateRandomItem(), CreateRandomItem(), CreateRandomItem()};
+
+            repositoryStub.Setup(repo => repo.GetItemsAsync())
+                .ReturnsAsync(expectedItems);
+
+            var controller = new ItemsController(repositoryStub.Object, loggerStub.Object);
+
+
+            // Act
+            var actualItems = await controller.GetItemsAsync();
+
+
+            // Assert
+            actualItems.Should().BeEquivalentTo(
+                expectedItems,
+                options => options.ComparingByMembers<Item>());
+
         }
 
         

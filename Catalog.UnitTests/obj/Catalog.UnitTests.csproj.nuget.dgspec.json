@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\projects\\Catalog\\Catalog.UnitTests\\Catalog.UnitTests.csproj": {}
+    "C:\\projects\\Catalog\\Catalog.UnitTests\\Catalog.UnitTests.csproj": {}
   },
   "projects": {
-    "c:\\projects\\Catalog\\catalog.Api\\Catalog.Api.csproj": {
+    "C:\\projects\\Catalog\\catalog.Api\\Catalog.Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\projects\\Catalog\\catalog.Api\\Catalog.Api.csproj",
+        "projectUniqueName": "C:\\projects\\Catalog\\catalog.Api\\Catalog.Api.csproj",
         "projectName": "Catalog.Api",
-        "projectPath": "c:\\projects\\Catalog\\catalog.Api\\Catalog.Api.csproj",
+        "projectPath": "C:\\projects\\Catalog\\catalog.Api\\Catalog.Api.csproj",
         "packagesPath": "C:\\Users\\deron.hutchinson\\.nuget\\packages\\",
-        "outputPath": "c:\\projects\\Catalog\\catalog.Api\\obj\\",
+        "outputPath": "C:\\projects\\Catalog\\catalog.Api\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\deron.hutchinson\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -75,14 +75,14 @@
         }
       }
     },
-    "c:\\projects\\Catalog\\Catalog.UnitTests\\Catalog.UnitTests.csproj": {
+    "C:\\projects\\Catalog\\Catalog.UnitTests\\Catalog.UnitTests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\projects\\Catalog\\Catalog.UnitTests\\Catalog.UnitTests.csproj",
+        "projectUniqueName": "C:\\projects\\Catalog\\Catalog.UnitTests\\Catalog.UnitTests.csproj",
         "projectName": "Catalog.UnitTests",
-        "projectPath": "c:\\projects\\Catalog\\Catalog.UnitTests\\Catalog.UnitTests.csproj",
+        "projectPath": "C:\\projects\\Catalog\\Catalog.UnitTests\\Catalog.UnitTests.csproj",
         "packagesPath": "C:\\Users\\deron.hutchinson\\.nuget\\packages\\",
-        "outputPath": "c:\\projects\\Catalog\\Catalog.UnitTests\\obj\\",
+        "outputPath": "C:\\projects\\Catalog\\Catalog.UnitTests\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\deron.hutchinson\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -99,8 +99,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "c:\\projects\\Catalog\\catalog.Api\\Catalog.Api.csproj": {
-                "projectPath": "c:\\projects\\Catalog\\catalog.Api\\Catalog.Api.csproj"
+              "C:\\projects\\Catalog\\catalog.Api\\Catalog.Api.csproj": {
+                "projectPath": "C:\\projects\\Catalog\\catalog.Api\\Catalog.Api.csproj"
               }
             }
           }
@@ -115,6 +115,10 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "FluentAssertions": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
             "Microsoft.Extensions.Logging.Abstractions": {
               "target": "Package",
               "version": "[6.0.1, )"
