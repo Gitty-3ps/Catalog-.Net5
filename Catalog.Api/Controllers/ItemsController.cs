@@ -4,15 +4,15 @@ using System.Data.Common;
 using System.Linq;
 using System.Security.Claims;
 using System.Threading.Tasks;
-using Catalog.Dtos;
-using Catalog.Entities;
-using Catalog.Repositories;
+using Catalog.Api.Dtos;
+using Catalog.Api.Entities;
+using Catalog.Api.Repositories;
 using Microsoft.AspNetCore.Authorization.Infrastructure;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 
-namespace Catalog.Controllers
+namespace Catalog.Api.Controllers
 {
     // GET /items
 

@@ -3,10 +3,10 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using Catalog.Entities;
+using Catalog.Api.Entities;
 using Microsoft.OpenApi.Any;
 
-namespace Catalog.Repositories
+namespace Catalog.Api.Repositories
 {
     public interface IInMemItemsRepository
     {

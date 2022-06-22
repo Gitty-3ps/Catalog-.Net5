@@ -1,5 +1,5 @@
 using System;
-namespace Catalog.Entities
+namespace Catalog.Api.Entities
 {
     public record Item
     {

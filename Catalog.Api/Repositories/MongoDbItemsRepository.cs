@@ -3,13 +3,13 @@
 using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
-using Catalog.Controllers;
-using Catalog.Entities;
+using Catalog.Api.Controllers;
+using Catalog.Api.Entities;
 using Microsoft.VisualBasic;
 using MongoDB.Bson;
 using MongoDB.Driver;
 
-namespace Catalog.Repositories
+namespace Catalog.Api.Repositories
 {
     public class MongoDbItemsRepository : IItemsRepository
     {
