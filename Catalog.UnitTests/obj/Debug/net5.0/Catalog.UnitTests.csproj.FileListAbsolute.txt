@@ -1,0 +1,6 @@
+c:\projects\Catalog\Catalog.UnitTests\bin\Debug\net5.0\CoverletSourceRootsMapping
+c:\projects\Catalog\Catalog.UnitTests\obj\Debug\net5.0\Catalog.UnitTests.csproj.AssemblyReference.cache
+c:\projects\Catalog\Catalog.UnitTests\obj\Debug\net5.0\Catalog.UnitTests.GeneratedMSBuildEditorConfig.editorconfig
+c:\projects\Catalog\Catalog.UnitTests\obj\Debug\net5.0\Catalog.UnitTests.AssemblyInfoInputs.cache
+c:\projects\Catalog\Catalog.UnitTests\obj\Debug\net5.0\Catalog.UnitTests.AssemblyInfo.cs
+c:\projects\Catalog\Catalog.UnitTests\obj\Debug\net5.0\Catalog.UnitTests.csproj.CoreCompileInputs.cache

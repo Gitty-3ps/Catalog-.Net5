@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "41uWWka1EXP99MWIB6yDsKACv91Z+Pcj6Beb9L7I6YS8i7k75zTxTVaTAOP3bdtpCdB7YlX1sfCMUusM20gBRQ==",
+  "success": true,
+  "projectFilePath": "C:\\projects\\Catalog\\build.proj",
+  "expectedPackageFiles": [
+    "C:\\Users\\deron.hutchinson\\.nuget\\packages\\microsoft.netframework.referenceassemblies\\1.0.2\\microsoft.netframework.referenceassemblies.1.0.2.nupkg.sha512",
+    "C:\\Users\\deron.hutchinson\\.nuget\\packages\\microsoft.netframework.referenceassemblies.net45\\1.0.2\\microsoft.netframework.referenceassemblies.net45.1.0.2.nupkg.sha512"
+  ],
+  "logs": []
+}
