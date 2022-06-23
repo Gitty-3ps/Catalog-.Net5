@@ -7377,11 +7377,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\projects\\Catalog\\Catalog.UnitTests\\Catalog.UnitTests.csproj",
+      "projectUniqueName": "c:\\projects\\Catalog\\Catalog.UnitTests\\Catalog.UnitTests.csproj",
       "projectName": "Catalog.UnitTests",
-      "projectPath": "C:\\projects\\Catalog\\Catalog.UnitTests\\Catalog.UnitTests.csproj",
+      "projectPath": "c:\\projects\\Catalog\\Catalog.UnitTests\\Catalog.UnitTests.csproj",
       "packagesPath": "C:\\Users\\deron.hutchinson\\.nuget\\packages\\",
-      "outputPath": "C:\\projects\\Catalog\\Catalog.UnitTests\\obj\\",
+      "outputPath": "c:\\projects\\Catalog\\Catalog.UnitTests\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\deron.hutchinson\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -7398,8 +7398,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\projects\\Catalog\\catalog.Api\\Catalog.Api.csproj": {
-              "projectPath": "C:\\projects\\Catalog\\catalog.Api\\Catalog.Api.csproj"
+            "c:\\projects\\Catalog\\catalog.Api\\Catalog.Api.csproj": {
+              "projectPath": "c:\\projects\\Catalog\\catalog.Api\\Catalog.Api.csproj"
             }
           }
         }
