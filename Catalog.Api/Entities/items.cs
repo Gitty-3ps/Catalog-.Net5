@@ -1,15 +1,17 @@
 using System;
 namespace Catalog.Api.Entities
 {
-    public record Item
+    public class Item
     {
 
-        public Guid Id { get; init; } // init similar to set, but you cannot modify after creation
+        public Guid Id { get; set; } // init similar to set, but you cannot modify after creation
 
-        public string Name { get; init; }
+        public string Name { get; set; }
 
-        public decimal Price {get; init; }
+        public string Description {get; set;}
 
-        public DateTimeOffset CreatedDate { get; init; }
+        public decimal Price {get; set; }
+
+        public DateTimeOffset CreatedDate { get; set; }
     }
 }
